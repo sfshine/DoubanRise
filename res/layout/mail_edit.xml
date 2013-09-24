@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_gravity="center" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="40.0dip"
+            android:gravity="center|left"
+            android:orientation="horizontal"
+            android:paddingLeft="5dip" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:id="@+id/user_img"
+                    android:layout_width="30.0dip"
+                    android:layout_height="30.0dip"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/ic_launcher" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:gravity="center|left" >
+
+                <TextView
+                    android:id="@+id/user_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="5dip"
+                    android:text="写邮件给Susan"
+                    android:textColor="#000000"
+                    android:textSize="20sp" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/section1"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:padding="5dip" >
+
+            <EditText
+                android:id="@+id/title_et"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/wrapper"
+                android:background="@drawable/tv_stroke_bg"
+                android:hint="请输入标题"
+                android:minHeight="40dip"
+                android:padding="3dip"
+                android:text="" >
+            </EditText>
+
+            <EditText
+                android:id="@+id/content_et"
+                android:layout_width="fill_parent"
+                android:layout_height="400dip"
+                android:layout_below="@+id/title_et"
+                android:layout_marginTop="3dip"
+                android:background="@drawable/tv_stroke_bg"
+                android:hint="请输入内容"
+                android:padding="3dip" >
+            </EditText>
+        </RelativeLayout>
+
+        <include layout="@layout/common_myprogressbar_layout" />
+    </FrameLayout>
+
+</LinearLayout>

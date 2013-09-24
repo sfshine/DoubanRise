@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout
+	android:orientation="vertical"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	>
+	<RelativeLayout
+		android:id="@+id/search_bar"
+		android:layout_width="fill_parent"
+		android:layout_height="40dip" >
+		<EditText
+			android:id="@+id/word_ed"
+			android:hint="请输入关键字"
+			android:layout_width="fill_parent"
+			android:layout_height="fill_parent"
+			android:background="@drawable/tv_stroke_bg"
+			android:layout_below="@id/wrapper"
+			android:paddingLeft="5dip"
+			android:layout_marginRight="49dip" >
+		</EditText>
+		<ImageButton
+			android:id="@+id/search_btn"
+			android:layout_width="50dip"
+			android:layout_height="fill_parent"
+			android:layout_centerVertical="true"
+			android:layout_alignParentRight="true"
+			android:background="@drawable/common_search_button" >
+		</ImageButton>
+	</RelativeLayout>
+	<View
+		android:id="@+id/common_divider_item_view"
+		android:background="#FFF"
+		android:focusable="true"
+		android:clickable="true"
+		android:layout_width="fill_parent"
+		android:layout_height="1.0px"
+		android:layout_marginLeft="13.0dip"
+		android:layout_marginRight="13.0dip"
+		android:layout_alignParentBottom="true" />
+</LinearLayout>

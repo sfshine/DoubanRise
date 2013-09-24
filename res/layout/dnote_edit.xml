@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:orientation="vertical" >
+	<FrameLayout
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		android:layout_gravity="center" >
+		<RelativeLayout
+			android:layout_width="fill_parent"
+			android:layout_height="fill_parent"
+			android:id="@+id/section1"
+			android:padding="5dip" >
+			<EditText
+				android:text=""
+				android:id="@+id/title_et"
+				android:hint="请输入日志标题"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:minHeight="40dip"
+				android:background="@drawable/tv_stroke_bg"
+				android:layout_below="@id/wrapper"
+				android:padding="3dip" >
+			</EditText>
+			<EditText
+				android:padding="3dip"
+				android:layout_marginTop="3dip"
+				android:id="@+id/content_et"
+				android:layout_width="fill_parent"
+				android:layout_height="400dip"
+				android:hint="请输入日志内容"
+				android:background="@drawable/tv_stroke_bg"
+				android:layout_below="@+id/title_et"
+				android:gravity="left" >
+			</EditText>
+		</RelativeLayout>
+		<include layout="@layout/common_myprogressbar_layout" />
+	</FrameLayout>
+</LinearLayout>

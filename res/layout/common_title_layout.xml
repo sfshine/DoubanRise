@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	android:orientation="vertical" >
+	<LinearLayout
+		android:id="@+id/common_title_bar"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:background="#ff72aad6"
+		android:gravity="center_vertical"
+		android:orientation="horizontal" >
+		<ImageButton
+			android:id="@+id/common_title_back_button"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:background="@drawable/skin_image_btn_title_colse_editmode"
+			android:tag="skin_image_btn_title_navigation"
+			android:onClick="exit" />
+		<LinearLayout
+			android:id="@+id/common_title_text_container"
+			android:layout_width="fill_parent"
+			android:layout_height="fill_parent"
+			android:layout_weight="1.0"
+			android:gravity="left"
+			android:paddingLeft="10.0dip"
+			android:paddingRight="10.0dip" >
+			<Button
+				android:id="@+id/common_title_button"
+				android:layout_width="wrap_content"
+				android:layout_height="fill_parent"
+				android:ellipsize="end"
+				android:gravity="center_vertical"
+				android:singleLine="true"
+				android:textColor="#FFF"
+				android:textSize="20dip"
+				android:text="豆瓣"
+				android:background="@drawable/base_catbar_background_selector" />
+		</LinearLayout>
+		<ImageButton
+			android:id="@+id/common_second"
+			android:layout_width="wrap_content"
+			android:layout_height="fill_parent"
+			android:layout_alignParentRight="true"
+			android:layout_centerVertical="true"
+			android:background="@drawable/base_catbar_background_selector"
+			android:visibility="gone"
+			android:text="二级按钮"
+			android:textSize="17dip" />
+		<ImageButton
+			android:id="@+id/common_title_menu_button"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:background="@drawable/skin_image_btn_title_navigation"
+			android:onClick="smenu" />
+	</LinearLayout>
+</LinearLayout>

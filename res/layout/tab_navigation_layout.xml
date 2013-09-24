@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="300dip"
+	android:layout_height="fill_parent"
+	android:background="#ff484848"
+	android:orientation="vertical"
+	android:id="@+id/right_frag"
+	android:padding="5dip" >
+	<View
+		android:layout_width="fill_parent"
+		android:layout_height="1.0px"
+		android:background="#99ffffff" />
+	<LinearLayout
+		android:layout_marginTop="5dip"
+		android:layout_width="270dip"
+		android:layout_height="wrap_content"
+		android:orientation="horizontal" >
+		<ImageView
+			android:id="@+id/userIcon_iv"
+			android:layout_width="40dip"
+			android:layout_height="40dip"
+			android:gravity="center"
+			android:scaleType="fitCenter"
+			android:src="@drawable/ic_launcher" />
+		<TextView
+			android:id="@+id/user_tv"
+			style="@style/titlefont"
+			android:layout_width="wrap_content"
+			android:layout_height="fill_parent"
+			android:gravity="center"
+			android:text="G.Shine"
+			android:layout_marginLeft="10dip" />
+	</LinearLayout>
+	<View
+		android:layout_width="fill_parent"
+		android:layout_height="1.0px"
+		android:layout_marginBottom="2dip"
+		android:layout_marginLeft="20dip"
+		android:layout_marginTop="2dip"
+		android:background="#99ffffff" />
+	<TextView
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:background="#aa000000"
+		android:gravity="left|center"
+		android:padding="2dip"
+		android:paddingLeft="5dip"
+		android:singleLine="true"
+		android:text="我的豆瓣"
+		android:textColor="#aaffffff" />
+	<LinearLayout
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:gravity="center"
+		android:orientation="horizontal" >
+		<Button
+			style="@style/nvbutton"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:onClick="book"
+			android:text="读书" />
+		<Button
+			style="@style/nvbutton"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:onClick="movie"
+			android:text="电影" />
+	</LinearLayout>
+	<LinearLayout
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:gravity="center"
+		android:orientation="horizontal" >
+		<Button
+			style="@style/nvbutton"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:onClick="music"
+			android:text="音乐" />
+		<Button
+			style="@style/nvbutton"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:onClick="mail"
+			android:text="豆邮" />
+	</LinearLayout>
+	<LinearLayout
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:gravity="center"
+		android:orientation="horizontal"
+		android:visibility="gone" >
+		<Button
+			style="@style/nvbutton"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:onClick="diary"
+			android:text="日记" />
+		<Button
+			style="@style/nvbutton"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:onClick="activities"
+			android:text="活动" />
+	</LinearLayout>
+	<LinearLayout
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:gravity="center"
+		android:orientation="horizontal" >
+		<Button
+			style="@style/nvbutton"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:onClick="search"
+			android:text="搜索" />
+		<Button
+			style="@style/nvbutton"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:onClick="note"
+			android:text="日志" />
+	</LinearLayout>
+	<TextView
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:background="#aa000000"
+		android:gravity="left|center"
+		android:padding="2dip"
+		android:paddingLeft="5dip"
+		android:singleLine="true"
+		android:text="格言"
+		android:textColor="#aaffffff" />
+	<LinearLayout
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:orientation="vertical"
+		android:background="@drawable/btn_background" >
+		<TextView
+			android:id="@+id/motto_tv"
+			android:layout_width="wrap_content"
+			android:layout_height="fill_parent"
+			android:textSize="17sp"
+			android:text="梦想无论怎样模糊，总潜伏在我们心底，使我们的心境永远得不到安宁."
+			android:textColor="#aaffffff" />
+	</LinearLayout>
+	<View
+		android:layout_width="fill_parent"
+		android:layout_height="1.0px"
+		android:background="#99ffffff" />
+</LinearLayout>

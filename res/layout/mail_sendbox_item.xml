@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout
+	android:gravity="center_vertical"
+	android:orientation="vertical"
+	android:id="@+id/list_item_layout"
+	android:background="@drawable/category_selector"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	xmlns:android="http://schemas.android.com/apk/res/android" >
+	<RelativeLayout
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent" >
+		<RelativeLayout
+			android:id="@+id/r"
+			android:layout_width="fill_parent"
+			android:layout_height="fill_parent"
+			android:layout_toLeftOf="@+id/mail_img_l"
+			android:gravity="left" >
+			<TextView
+				android:textColor="@color/black"
+				android:textSize="18dp"
+				android:id="@+id/mail_title"
+				android:layout_width="wrap_content"
+				android:maxHeight="60dip"
+				android:textStyle="bold"
+				android:layout_height="wrap_content"
+				android:text="tetafdsfsadfsdaf"
+				android:lines="2" />
+			<TextView
+				android:textSize="13dp"
+				android:id="@+id/mail_user"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="teta"
+				android:textColor="#398A47"
+				android:lines="1"
+				android:layout_alignParentBottom="true"
+				android:layout_below="@id/mail_title"
+				android:gravity="bottom" />
+		</RelativeLayout>
+		<LinearLayout
+			android:id="@+id/mail_img_l"
+			android:orientation="vertical"
+			android:layout_height="fill_parent"
+			android:layout_width="wrap_content"
+			android:layout_alignParentRight="true" >
+			<ImageView
+				android:id="@+id/mail_img"
+				android:layout_width="60.0dip"
+				android:layout_height="80.0dip"
+				android:scaleType="fitCenter" />
+		</LinearLayout>
+	</RelativeLayout>
+</LinearLayout>

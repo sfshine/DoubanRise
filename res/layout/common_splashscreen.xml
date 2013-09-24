@@ -1,0 +1,19 @@
+<RelativeLayout
+	android:id="@+id/LinearLayout01"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical"
+	android:background="#0d99DD" >
+	<TextView
+		android:layout_width="280dip"
+		android:layout_height="100dip"
+		android:layout_alignParentBottom="true"
+		android:layout_alignParentRight="true"
+		android:layout_marginBottom="96dp"
+		android:background="#33FFFFFF"
+		android:gravity="right|bottom"
+		android:text="豆豆梦想版"
+		android:textColor="#EEFFFFFF"
+		android:textSize="40sp" />
+</RelativeLayout>

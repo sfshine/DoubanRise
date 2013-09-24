@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout
+	android:orientation="vertical"
+	android:background="#FFFFFF"
+	android:layout_width="294.0dip"
+	android:layout_height="250.0dip"
+	xmlns:android="http://schemas.android.com/apk/res/android" >
+	<include layout="@layout/common_dialog_title" />
+	<RelativeLayout
+		android:gravity="center"
+		android:orientation="vertical"
+		android:layout_width="fill_parent"
+		android:layout_height="90.0dip"
+		android:layout_weight="100.0"
+		android:layout_gravity="center" >
+		<ImageView
+			android:id="@+id/verify_imageView"
+			android:layout_width="200dip"
+			android:layout_height="40dip"
+			android:layout_alignParentTop="true"
+			android:layout_centerHorizontal="true"
+			android:scaleType="centerCrop"
+			android:src="@drawable/ic_launcher" />
+		<EditText
+			android:id="@+id/captcha_edit"
+			android:layout_below="@+id/verify_imageView"
+			android:layout_width="fill_parent"
+			android:layout_height="40dip"
+			android:layout_marginLeft="4.0dip"
+			android:layout_marginTop="5.0dip"
+			android:layout_marginRight="4.0dip"
+			android:layout_marginBottom="4.0dip"
+			android:singleLine="true"
+			style="@style/Widget.EditText" />
+	</RelativeLayout>
+	<include
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:layout_weight="1.0"
+		layout="@layout/common_dialog_bottom_bar" />
+</LinearLayout>
