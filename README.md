@@ -10,3 +10,5 @@ DoubanRise
 
 注意! 由于豆瓣的api html和xml接口都在变化,所以这个app估计运行起来很多功能都不能使用,所以仅供参考
 
+注意!依赖类库https://github.com/sfshine/ZXingDemo
+
