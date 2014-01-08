@@ -1,4 +1,4 @@
-DoubanRise
+﻿DoubanRise
 ==========
 这是我的一个毕业设计,都是一些基本知识,仅供参考.
 主要是其中的 解析网络数据用到了三种方式
@@ -12,3 +12,4 @@ DoubanRise
 
 注意!依赖类库https://github.com/sfshine/ZXingDemo
 
+效果参考 http://www.eoeandroid.com/thread-243774-1-1.html
